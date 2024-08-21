@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int a;
+    string divby3="";
+    cout<<"Enter a:";
+    cin>>a;
+    divby3=(a%3==0)?"a is divisible by 3":"a is not divisible by 3";
+    cout<<divby3;
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b;
+    cout<<"Enter a:";
+    cin>>a;
+    cout<<"Enter b:";
+    cin>>b;
+    int sum=a+b;
+    cout<<"Addition of a and b is: "<<sum<<"\n";
+    int diff=a-b;
+    cout<<"Subtraction of a and b is: "<<diff<<"\n";
+    int mul=a*b;
+    cout<<"Multiplication of a and b is: "<<mul<<"\n";
+    float div=a/b;
+    cout<<"Division of a and b is: "<<div<<"\n";
+    float modulus=a%b;
+    cout<<"Modulus of a and b is: "<<modulus<<"\n";
+    return 0;
+}

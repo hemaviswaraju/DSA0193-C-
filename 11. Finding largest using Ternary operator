@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int a,b,c;
+    string largest="";
+    cout<<"Enter a:";
+    cin>>a;
+    cout<<"Enter b:";
+    cin>>b;
+    cout<<"Enter c:";
+    cin>>c;
+    largest=(a>b && a>c)?"A is largest":(b>a && b>c)?"B is largest":"C is largest";
+    cout<<largest;
+    return 0;
+}

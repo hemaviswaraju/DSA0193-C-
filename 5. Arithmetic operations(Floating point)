@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main() {
+    float a,b;
+    cout << "Enter a and b: ";
+    cin >> a>> b;
+    float sum=a+b;
+    float sub=a-b;
+    float mul=a*b;
+    float div=a/b;
+    float modu=fmod(a,b);
+    cout<<"Addition: "<<sum<<"\n";
+    cout<<"Subtraction: "<<sub<<"\n";
+    cout<<"Multiplication"<<mul<<"\n";
+    cout<<"Division"<<div<<"\n";
+    cout<<"Modulus"<<modu<<"\n";
+    return 0;
+}

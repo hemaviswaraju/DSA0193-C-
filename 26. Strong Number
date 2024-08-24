@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int n = 145, sum = 0, rem;
+    int temp = n;
+    while (n != 0) {
+        rem = n % 10;
+        int fact = 1;
+        for (int i = 1; i <= rem; i++) {
+            fact *= i;
+        }
+        sum += fact;
+        n /= 10;
+    }
+    cout << (temp == sum ? "Strong number" : "Not a strong number");
+    return 0;
+}

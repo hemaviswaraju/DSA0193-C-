@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int n = 21,sum=0,rem;
+    int temp=n;
+    while(n!=0){
+        rem=n%10;
+        sum+=rem;
+        n=n/10;
+    }
+    cout<<(temp%sum==0?"Harshad number":"Not a Harshad number");
+    return 0;
+}

@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int n=17,rem;
+    rem=n%10;
+    if(rem==7 || n%7==0){
+        cout<<"Buzz Number";
+    }else{
+        cout<<"Not a Buzz NUmber";
+    }
+    return 0;
+}

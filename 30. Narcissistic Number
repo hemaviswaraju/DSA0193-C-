@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    int rem,sum=0;
+    string s="153";
+    int l=s.length();
+    int n=stoi(s);
+    int temp=n;
+    while(n!=0){
+        rem=n%10;
+        sum+=pow(rem,l);
+        n=n/10;
+    }
+    cout<<(temp==sum?"Nacissistic Number":"Not a narcissistic number");
+    return 0;
+}

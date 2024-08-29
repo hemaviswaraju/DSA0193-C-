@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int countCharacters(string str) {
+    int count = 0;
+    while (str[count] != '\0') {
+        count++;
+    }
+    return count;
+}
+
+int main() {
+    string str;
+    cout << "Enter a string: ";
+    getline(cin, str);
+
+    int numOfCharacters = countCharacters(str);
+    cout << "Number of characters in the string: " << numOfCharacters << endl;
+
+    return 0;
+}

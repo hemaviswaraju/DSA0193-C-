@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class Area {
+public:
+    Area(float r) {
+        cout << "Area of Circle: " << M_PI * r * r << endl;
+    }
+
+    Area(float l, float w, bool isRectangle) {
+        if (isRectangle) {
+            cout << "Area of Rectangle: " << l * w << endl;
+        }
+    }
+
+    Area(float b, float h) {
+        cout << "Area of Triangle: " << 0.5 * b * h << endl;
+    }
+};
+
+int main() {
+    float a, b;
+
+    cout << "Enter radius of the circle: ";
+    cin >> a;
+    Area circle(a);
+
+    cout << "Enter length and width of the rectangle: ";
+    cin >> a >> b;
+    Area rectangle(a, b, true);
+
+    cout << "Enter base and height of the triangle: ";
+    cin >> a >> b;
+    Area triangle(a, b);
+
+    return 0;
+}

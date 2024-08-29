@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+// Base class
+class Degree {
+public:
+    void getDegree() {
+        cout << "I got a Degree" << endl;
+    }
+};
+
+// Subclass Undergraduate
+class Undergraduate : public Degree {
+public:
+    void getDegree() {
+        cout << "I am an Undergraduate" << endl;
+    }
+};
+
+// Subclass Postgraduate
+class Postgraduate : public Degree {
+public:
+    void getDegree() {
+        cout << "I am a Postgraduate" << endl;
+    }
+};
+
+int main() {
+    // Creating objects of each class
+    Degree degree;
+    Undergraduate ug;
+    Postgraduate pg;
+
+    // Calling the function using each object
+    degree.getDegree();
+    ug.getDegree();
+    pg.getDegree();
+
+    return 0;
+}
